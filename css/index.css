@@ -1,0 +1,768 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html,body{
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background);
+    overflow-x: hidden;
+    
+}
+:root{
+    --font-color: rgb(250, 247, 247);
+    --background:black;
+    --button-color: yellow;
+    --span:yellow;
+}
+.navBar{
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: rgb(6, 6, 6);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 999;
+}
+.navBar h1{
+    margin-left: 20px;
+    font-size: 4vw;
+    color: var(--font-color);
+}
+.navBar span{
+    color: yellow;
+}
+.list{
+   
+  display: flex;
+}
+.listitem{
+    margin-right: 30px;
+    
+    font-size: 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+    color: var(--font-color);
+    list-style-type:none ;
+}
+.listitem a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.btn{
+    width: 120px;
+    height: 50px;
+    padding-top:14px;
+    padding-left: 17px;
+     background-color: var(--button-color);
+     transition: 0.5;
+     color: black
+}
+.btn:hover{
+    background-color: black;
+    transform: scale(1.1);
+    color: black;
+}
+.btn2{
+    margin-top: 30px;
+    font-size: 17px;
+    width: 250px;
+    height: 50px;
+    color: black;
+    padding-top:5px;
+    padding-left: 10px;
+     background-color: var(--button-color);
+     transition: 0.5;
+}
+.btn2:hover{
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+}
+.menuicon{
+    display: none;
+   color: var(--font-color );
+   background: transparent;
+   cursor: pointer;
+}
+.ri-close-fill{
+    display: none;
+}
+#midddleSection{
+  position: relative;
+ 
+}
+#midddleSection img{
+    width: 100%;
+    display: block;
+    padding-left: 30%;
+   
+  }
+.middleLeft{
+    position: absolute;
+    top: 45px;
+    left: 100px;
+    width: 40%;
+    font-size: 36px;
+}
+.middleLeft h1{
+    color: var(--font-color);
+    
+}
+.middleLeft h1 span{
+  
+    color: var(--span);
+}
+.middleWho{
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    
+}
+.middleWho{
+    color: var(--font-color );
+}
+.middleWhocontent{
+    height: 70vh;
+   display: flex;
+   color: var(--font-color );
+}
+.middleWhoL{
+    width: 50%;
+    padding-left: 7%;
+
+}
+.middleWhoR{
+    width: 50%;
+    font-size: 1.5vw;
+    margin: 30px;
+    padding-right: 20px;
+    line-height: 2.2vw;
+}
+.middleWhoL img{
+    width: 80%;
+    height: 80%;
+}
+#teamSection{
+    height: 80vh;
+}
+.head1{
+    color: var(--font-color);
+    justify-content: center;
+    text-align: center;
+}
+.mainHeading{
+    text-shadow: 6px gray;
+    font-size: 6vw;
+    color: gray;
+}
+.subHeading{
+    position: relative;
+    top: -3vw;
+    font-size: 3vw;
+}
+.body2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.Box{
+    height: 280px;
+    width: 250px;
+    background-color: var(--span);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.Box img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+.Box:hover{
+    transform: translateY(1px);
+}
+.Box:hover img{
+    opacity: 0;
+}
+.Box .content {
+    position: relative;
+    bottom: 80px;
+    left: 15%;
+    width: 80%;
+    height: 80px;
+    opacity: 0;
+}
+.Box .content h1{
+    margin-bottom: 7px;
+    text-align: center;
+    font-size: 1.4vw;
+}
+.Box .content h2{
+    margin-top: 7px;
+    text-align: center;
+    font-size: 1.4vw;
+}
+.Box .content hr{
+    text-align: center;
+    border-top: 1.5px solid black;
+    width: 97%;
+}
+.Box:hover .content{
+    position: absolute;
+    opacity: 1;
+}
+.featureSection{
+    height: 180vh;
+}
+.featurebody2{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.featurebody2 .Box2{
+    width: 660px;
+    height: 520px;
+}
+.Box2{
+    position: relative;
+    height: 280px;
+    width: 250px;
+    background-color: var(--span);
+    margin-top: 20px;
+    margin-left: 30px;
+}
+.Box2 img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+.Box2 .content{
+    position: absolute;
+    color: white;
+}
+.Box2 .content h1{
+    font-size: 2.5vw;
+    margin-top: -140px;
+    color: white;
+}
+.Box2 button{
+    font-size: 1.5vw;
+    margin-top: 3vh;
+    width: 10vw;
+    height: 6vh;
+    background-color: yellow;
+    transition: 0.5s;
+}
+.Box2 button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+#Classes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 50vh;
+    width: 100%;
+    background-color: yellow;
+}
+#Classes .text{
+    text-align: center;
+    margin-left: 70px;
+    margin: 20px;
+    height: 230px;
+    width: 250px;
+   
+}
+.text h1{
+    
+    font-size: 12vw;
+}
+#membershipSection{
+    height: 95vh;
+    }
+.bodyMember{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.Box3{
+    background-color: white;
+    width: 320px;
+    height: 460px;
+    margin-top: 10px;
+    transition: .5s;
+}
+.Box3:hover{
+   transform: scale(1.1);
+}
+.Box3 h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.Box3 button{
+    font-size: 1.5vw;
+    margin-top: 3vh;
+    width: 10vw;
+    height: 6vh;
+    background-color: yellow;
+    margin-left: 26%;
+    transition: 0.5;
+}
+.Box3 button:hover{
+    transform: scale(1.1);
+    background-color: black;
+    color: white;
+}
+.Box3 .ri-time-line{
+    font-size: 15vh;
+    margin-left: 30%;
+}
+.ri-money-dollar-circle-line{
+    margin-top: 30px;
+    font-size: 4vh;
+    margin-left: 10%;
+}
+.ri-checkbox-line{
+    margin-top: 30px;
+    font-size: 2.4vh;
+    margin-left: 10%;
+}
+.footer{
+    height: 80vh;
+    width: 100%;
+}
+.first1{
+    height: 1px;
+   width: 100%;
+    background-color: yellow;
+}
+.first2{
+    margin-top: 19px;
+    height: 3px;
+     width: 100%;
+    background-color: yellow;
+}
+.first3{
+    margin-top: 18px;
+    height: 5px;
+     width: 100%;
+    background-color: yellow;
+}
+.first4{
+    margin-top: 17px;
+    height: 7px;
+     width: 100%;
+    background-color: yellow;
+}
+.first5{
+    margin-top: 16px;
+    height: 9px;
+     width: 100%;
+    background-color: yellow;
+}
+.first6{
+    margin-top: 15px;
+    height: 11px;
+     width: 100%;
+    background-color: yellow;
+}
+.first7{
+    margin-top: 14px;
+    height: 13px;
+     width: 100%;
+    background-color: yellow;
+}
+.first8{
+    margin-top: 13px;
+    height: 15px;
+     width: 100%;
+    background-color: yellow;
+}
+.first9{
+    margin-top: 12px;
+    height: 17px;
+     width: 100%;
+    background-color: yellow;
+}
+.first10{
+    margin-top: 11px;
+    height: 19px;
+     width: 100%;
+    background-color: yellow;
+}
+.first11{
+    margin-top: 10px;
+    height: 21px;
+     width: 100%;
+    background-color: yellow;
+}
+.first12{
+    margin-top: 9px;
+    height: 23px;
+     width: 100%;
+    background-color: yellow;
+}
+.first13{
+    margin-top: 8px;
+    height: 25px;
+     width: 100%;
+    background-color: yellow;
+}
+.first14{
+    margin-top: 7px;
+    height: 27px;
+     width: 100%;
+    background-color: yellow;
+}
+.first15{
+    margin-top: 6px;
+    height: 29px;
+     width: 100%;
+    background-color: yellow;
+}
+.first16{
+    margin-top: 5px;
+    height: 31px;
+     width: 100%;
+    background-color: yellow;
+}
+.first17{
+    margin-top: 4px;
+    height: 33px;
+     width: 100%;
+    background-color: yellow;
+}
+.first19{
+    margin-top: 3px;
+    height: 35px;
+     width: 100%;
+    background-color: yellow;
+}
+.first20{
+    margin-top: 2px;
+    height: 37px;
+     width: 100%;
+    background-color: yellow;
+}
+.first21{
+    margin-top: 1px;
+    height: 39px;
+     width: 100%;
+    background-color: yellow;
+}
+.first22{
+    margin-top: 1px;
+    height: 40px;
+     width: 100%;
+    background-color: yellow;
+}
+.first23{
+    margin-top: 1px;
+    height: 42px;
+     width: 100%;
+    background-color: yellow;
+}
+.first25{
+    margin-top: 1px;
+    height: 42px;
+     width: 100%;
+    background-color: yellow;
+}
+.first24{
+    margin-top: 1px;
+    height: 47px;
+     width: 100%;
+    background-color: yellow;
+}
+
+#contact{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: yellow;
+    padding: 30px;
+    flex-wrap: wrap;
+    
+}
+#contact a,address{
+    text-decoration: none;
+    color: black;
+    font-size: 1vw;
+}
+.part1text{
+    margin-top: 7px;
+}
+.part2text{
+    margin-top: 7px;
+}
+.part3text{
+    margin-top: 7px;
+}
+.part3 h1{
+    font-size: 2vw;
+}
+.part3text input{
+    margin-top: 10px;
+    width: 30vw;
+    height: 4.5vh;
+}
+.part3text button{
+    width: 4vw;
+    height: 4.5vh;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+.part3text button:hover{
+    transform: scale(1.1);
+}
+@media (max-width:600px) {
+    .navBar{
+        position: sticky;
+    }
+    .list{
+        position: relative;
+    }
+    .navBar h1{
+        font-size: 7vw;
+    }
+    .menuicon{
+        display: block;
+        font-size: 9vw;
+        z-index:999;
+    }
+     .listitem{
+        padding-left: 50px;        width: 100%;
+        color: white;
+        position: absolute;
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        flex-direction:column;
+        pointer-events: none;
+    }
+    
+    .ri-close-line{
+        display: none;
+    }
+    .active .listitem {
+        transform: translateX(0);
+        visibility: visible;
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .active .ri-close-line{
+        display: block;
+        color: white;
+    }
+    .active .ri-menu-5-line{
+        display: none;
+    }
+    
+    #midddleSection{
+
+        height: 80vh;
+       
+      }
+      #midddleSection img{
+        
+        display: block;
+        width: 100%;
+        padding-left: 0%;
+       
+      }
+    .middleLeft{
+        top: 320px;
+        left: 30px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .btn2{
+        margin-left: 25px;
+        margin-top: 35px;
+        height: 60px;
+    }
+    .middleWhocontent{
+        height: 120vh;
+       display: block;  
+    }
+    .middleWhoR{
+        width: 90%;
+
+    }
+    .middleWhoL{
+       padding-left: 30px;
+    
+    }
+    .middleWhoR{
+        font-size: 5vw;
+        line-height: 8vw;
+        text-align: justify;
+    }
+    .middleWhoL img{
+        width: 230%;
+        height: 100%;  
+    }
+    .mainHeading{
+        font-size: 10vw;
+    }
+    .subHeading{
+        top: -6vw;
+        font-size: 6vw;
+    }
+    .body2{
+        height: 170vh;
+    }
+    #teamSection{
+        height: 185vh;
+    }
+    #Classes{
+        height: 145vh;
+        justify-content: center;
+    }
+    .text h1{
+    
+    font-size: 33vw;
+}
+.featureSection{
+    height: 190vh;
+}
+#membershipSection{
+    height: 235vh;
+}
+.Box .content h1{
+    font-size: 6.3vw;
+}
+.Box .content h2{
+    font-size: 4.9vw;
+    text-align: center;
+}
+.featurebody2 .Box2{
+    width: 300px;
+    height: 300px;
+}
+.Box3{
+   
+    margin-top: 60px;
+    width: 280px;
+}
+.Box3 button{
+    width: 38vw;
+    height: 6.4vh;
+    font-size: 5vw;
+}
+.Box2 .content h1{
+    font-size: 5vw;
+    margin-top: -90px;
+}
+.Box2 button{
+    font-size: 5vw;
+    margin-top: 1vh;
+    width: 23vw;
+    height: 6vh;
+    background-color: yellow;
+}
+#contact{
+    text-align: center;
+    height: 45vh;
+    flex-direction: column;
+    
+}
+#contact a,address{
+    text-decoration: none;
+    color: black;
+    font-size: 3vw;
+}
+.part1text{
+    margin-top: 2px;
+}
+.part2text{
+    margin-top: 2px;
+}
+.part3text{
+    margin-top: 2px;
+}
+.part3 h1{
+    margin-top: 15px;
+    font-size: 3.7vw;
+}
+.part3text input{
+    margin-top: 15px;
+    width: 40vw;
+    height: 4.5vh;
+}
+.part3text button{
+    width: 18vw;
+
+}
+
+}
+@media (max-width:1326.40px) and (min-width:686.40px) {
+    .featureSection{
+        height: 350vh;
+    }
+}
+@media (max-width:1216px) and (min-width:686.40px) {
+    .navBar h1{
+        font-size: 2vw;
+    }
+    .middleLeft h1{
+        font-size: 4vw;
+    }
+}
+ 
+    @media (max-width:1018.40px) and (min-width:686.40px) {
+        .navBar h1{
+            font-size: 1.5vw;
+        }
+        .middleLeft h1{
+            font-size: 3vw;
+        }
+        #teamSection{
+            height: 120vh;
+        }
+        #Classes{
+            height: 70vh;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        #Classes h2{
+            font-size: 3vw;
+        }
+        .text h1{
+            font-size: 8vw;
+        }
+    }
+    @media (max-width:730px) and (min-width:467px) {
+        .Whoweare{
+            height: 160vh;
+        }
+        .featureSection{
+            height: 200vh;
+        }
+        .Box2 .content h1{
+            font-size: 5vw;
+            margin-top: -120px;
+        }
+    }
+
+
